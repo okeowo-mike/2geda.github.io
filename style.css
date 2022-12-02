@@ -52,6 +52,8 @@ body {
 #container {
   max-width: 1440px;
   margin: auto;
+  /* padding: 0 1.5rem; */
+  overflow: hidden;
 }
 
 /* nav bar /////////////////////////////////////////////////////////////// */
@@ -146,6 +148,13 @@ header {
 
 #headerContent img {
   height: 43px;
+  width: auto;
+  /* padding-left: 10px; */
+}
+
+#headerContent #badge-img {
+  margin-right: 30px;
+  margin-top: 4px;
 }
 
 #headerImage {
@@ -204,7 +213,7 @@ header {
 #about-lead {
   color: var(--orangeText-color);
   font-weight: 600;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 22.5px;
   margin-top: 120px;
 }
@@ -224,10 +233,11 @@ header {
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
-  max-width: 656px;
+  max-width: 550px;
   margin: auto;
   margin-top: 24px;
   letter-spacing: 0.5px;
+  text-align: center;
 }
 
 #aboutCards {
@@ -239,7 +249,7 @@ header {
 
 .card {
   box-shadow: 0px 20px 50px 0px rgba(18, 17, 39, 0.08);
-  width: 264px;
+  width: 300px;
   height: 297px;
   border-radius: 12px;
   padding: 56px 24px 56px 24px;
@@ -249,7 +259,7 @@ header {
 
 .card h3 {
   line-height: 22.4px;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 600;
   color: var(--brownText-color);
   margin-top: 30px;
@@ -257,7 +267,7 @@ header {
 
 .card p {
   line-height: 25.2px;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
   color: var(--greyText-color);
   margin-top: 30px;
@@ -274,7 +284,7 @@ header {
   background-color: var(--bg-color);
   height: 600px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
 }
 
 #account #accountbtn {
@@ -286,7 +296,7 @@ header {
   flex-direction: column;
   justify-content: center;
   /* margin-left: 100px; */
-  padding-left: 100px;
+  /* padding-left: 100px; */
   margin: auto;
 }
 
@@ -295,9 +305,15 @@ header {
   margin-top: 10px;
 }
 
+#account-lead {
+  font-size: 24px;
+  margin: auto;
+}
+
 #account-lead-p {
   max-width: 472px;
   margin-top: 24px;
+  text-align: center;
 }
 
 #accountImage img {
@@ -382,7 +398,8 @@ header {
 #join {
   display: flex;
   flex-direction: row;
-  margin-top: 100px;
+  margin-top: -50px;
+  margin-bottom: 40px;
 }
 
 #joinContent {
@@ -407,6 +424,22 @@ header {
 #join-lead-p {
   max-width: 445px;
   margin-top: 24px;
+  text-align: center;
+}
+
+#joinContent a {
+  display: flex;
+  justify-content: center;
+}
+
+#join-lead {
+  font-size: 24px;
+  margin: auto;
+}
+#join-lead-p {
+  max-width: 445px;
+  margin-top: -180px;
+  text-align: center;
 }
 
 #joinlink {
@@ -610,8 +643,9 @@ form {
   } */
 
   #container {
-    max-width: 400px;
+    max-width: 390px;
     margin: auto;
+    overflow: hidden;
   }
 
   nav ul li {
