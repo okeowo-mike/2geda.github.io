@@ -47,6 +47,9 @@
 /* body ////////////////////////////////////////////////////////////////// */
 body {
   text-decoration: none;
+}
+
+#container {
   max-width: 1440px;
   margin: auto;
 }
@@ -57,20 +60,28 @@ body {
   z-index: 1;
   top: 0;
   display: flex;
+  width: 1440px;
   height: 62px;
   margin-top: 20px;
   background-color: var(--bg-color);
 }
 
-nav img {
-  margin-left: 40px;
+/* nav img{
+  margin-left: 25px;
+  margin-bottom: 10px;
+} */
+nav a img {
+  margin-left: 25px;
+  margin-bottom: 10px;
+  width: 100px;
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
   list-style: none;
-  padding-left: 800px;
+  padding-left: 700px;
+  margin-top: 15px;
 }
 nav ul li {
   margin-left: 21px;
@@ -187,6 +198,7 @@ header {
 
 #about {
   text-align: center;
+  margin-bottom: 90px;
 }
 
 #about-lead {
@@ -237,7 +249,7 @@ header {
 
 .card h3 {
   line-height: 22.4px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--brownText-color);
   margin-top: 30px;
@@ -245,17 +257,22 @@ header {
 
 .card p {
   line-height: 25.2px;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 17px;
+  font-weight: 500;
   color: var(--greyText-color);
   margin-top: 30px;
+}
+
+#about #aboutCards .about-svg {
+  font-size: 30px;
+  color: #1685ee;
 }
 
 /* account section ////////////////////////////////////////////////////// */
 
 #account {
   background-color: var(--bg-color);
-  height: 471px;
+  height: 600px;
   display: flex;
   flex-direction: row;
 }
@@ -268,7 +285,9 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 100px;
+  /* margin-left: 100px; */
+  padding-left: 100px;
+  margin: auto;
 }
 
 #account-h2 {
@@ -283,8 +302,9 @@ header {
 
 #accountImage img {
   height: 530px;
-  width: 794.6px;
-  margin-left: 200px;
+  width: 650.6px;
+  margin-left: 100px;
+  margin-top: 70px;
 }
 
 /* team section //////////////////////////////////////////////////////// */
@@ -423,6 +443,16 @@ header {
   padding-right: 30px;
 }
 
+#contactContainer #socialsIcons svg {
+  color: #848994;
+  font-size: 24px;
+  margin-right: 28px;
+}
+
+#contactContainer #socialsIcons a {
+  text-decoration: none;
+}
+
 #contactText {
   margin-bottom: 90px;
   max-width: 540px;
@@ -511,6 +541,21 @@ form {
   padding-left: 150px;
 }
 
+#left svg {
+  color: rgba(255, 255, 255, 0.32);
+  font-size: 24px;
+  margin-right: 28px;
+}
+
+#left #socialsIcons a {
+  text-decoration: none;
+}
+
+#left img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
 #right {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -558,9 +603,14 @@ form {
 /* mobile view  ///////////////////////////////////////////////////// */
 
 @media (max-width: 500px) {
-  body {
+  /* body {
     text-decoration: none;
     max-width: 400x;
+    margin: auto;
+  } */
+
+  #container {
+    max-width: 400px;
     margin: auto;
   }
 
@@ -865,20 +915,17 @@ form {
     width: 326px;
     font-size: 16px;
     font-weight: 400px;
-}
+  }
 
-#right {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0px;
-  margin-top: 50px;
-}
+  #right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+    margin-top: 50px;
+  }
 
-#company-footer {
-  margin-top: 40px;
-  /* margin-left: 200px; */
-}
-
-
-
+  #company-footer {
+    margin-top: 40px;
+    /* margin-left: 200px; */
+  }
 }
