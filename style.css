@@ -499,7 +499,6 @@ header {
 
 #contactContainer {
   display: flex;
-  flex: 1;
   margin: auto;
   justify-content: center;
   align-items: center;
@@ -707,7 +706,7 @@ form {
 
   #about {
     max-width: 400px;
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
     margin-top: -50px;
   }
 
@@ -733,14 +732,14 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     margin-left: -16px;
   }
 
   /* account section   //////////////////////////////////////////////////// */
 
   #account {
-    max-width: 400px;
+    /* max-width: 400px; */
     height: 900px;
     text-align: center;
     flex-direction: column;
@@ -756,9 +755,14 @@ form {
   }
 
   #account-lead-p {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  #account-lead {
     width: 277px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 40px;
   }
 
@@ -766,22 +770,26 @@ form {
     display: inline-block;
     width: 342px;
     height: 44px;
+    font-size: 18px;
     border-radius: 4px;
     background-color: #fd7e14;
     border: none;
+    margin-top: 30px;
+    margin-left: 8px;
   }
 
   #accountImage img {
     width: 370px;
     height: 226px;
     margin-left: 50px;
+    margin-top: -50px;
   }
 
   /* team section /////////////////////////////////////////////////////////// */
 
-  #team {
-    max-width: 400px;
-  }
+  /* #team {
+    
+  } */
 
   #team h2 {
     font-size: 32px;
@@ -797,7 +805,7 @@ form {
 
   /* refer section   ///////////////////////////////////////////////////// */
   #refer {
-    max-width: 400px;
+    /* max-width: 400px; */
     height: 720px;
     flex-direction: column-reverse;
   }
@@ -855,52 +863,36 @@ form {
   }
 
   /* contact setion  /////////////////////////////////////////////////////// */
-  #contact {
-    max-width: 400px;
-    height: 800px;
-    /* margin-top: -80px; */
-    margin-bottom: 50px;
-  }
-
   #contact #contactContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* height: 100vh; */
+    /* margin-top: -150px; */
   }
 
   #contact-lead {
     display: none;
   }
 
-  #contact #contactText {
-    width: 375px;
+  #contact #contactContainer #contactText {
+    height: 240px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
 
-  #contactText h2 {
-    width: 239px;
-    font-size: 24px;
-    font-weight: 700;
-  }
-
-  #contactText p {
-    width: 307px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 27px;
-  }
-
-  #contactText {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  #socialsIcons {
+    padding-left: 40px;
   }
 
   #form {
     margin: auto;
-    margin-top: -200px;
-    margin-left: -180px;
+    margin-top: -50px;
+    margin-left: -173px;
+    /* padding-bottom: 30px; */
   }
 
   .form-group input {
@@ -929,7 +921,7 @@ form {
 
   /* footer sectionn ///////////////////////////////////////////////////// */
   #main-footer {
-    max-width: 400px;
+    /* max-width: 400px; */
     height: 500px;
   }
 
