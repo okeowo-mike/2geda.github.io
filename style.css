@@ -82,7 +82,7 @@ nav ul {
   display: flex;
   flex-direction: row;
   list-style: none;
-  padding-left: 700px;
+  padding-left: 800px;
   margin-top: 15px;
 }
 nav ul li {
@@ -461,6 +461,7 @@ header {
 #contact-lead {
   padding-top: 120px;
   display: flex;
+  font-size: 24px;
   justify-content: center;
 }
 
@@ -543,7 +544,7 @@ form {
 }
 
 #main-footer {
-  height: 435px;
+  height: 320px;
   background-color: var(--brownText-color);
 }
 
@@ -589,11 +590,19 @@ form {
   margin-bottom: 20px;
 }
 
-#right {
+/* #right {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 100px;
   padding-right: 150px;
+} */
+
+#right #home-footer {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  margin-right: 600px;
 }
 
 #right ul li a {
@@ -615,6 +624,7 @@ form {
 .line {
   width: 1128px;
   border: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: -40px;
 }
 
 #line {
@@ -622,11 +632,11 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 #line p {
-  margin-top: 44px;
+  margin-top: 20px;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -636,14 +646,8 @@ form {
 /* mobile view  ///////////////////////////////////////////////////// */
 
 @media (max-width: 500px) {
-  /* body {
-    text-decoration: none;
-    max-width: 400x;
-    margin: auto;
-  } */
-
   #container {
-    max-width: 390px;
+    /* max-width: 390px; */
     margin: auto;
     overflow: hidden;
   }
@@ -662,23 +666,25 @@ form {
   }
 
   header {
-    max-width: 400px;
+    /* max-width: 400px; */
     flex-direction: column-reverse;
     margin: auto;
+    height: 900px;
   }
 
   #headerImage img {
     width: 400px;
     height: 285px;
-    margin-left: 70px;
-    margin-top: -40px;
+    margin-left: 80px;
+    margin-top: -130px;
   }
 
   #headerContent {
     text-align: center;
     margin: auto;
     position: absolute;
-    margin-left: 35px;
+    margin-left: 40px;
+    margin-top: 20px;
   }
 
   #headerContent h1 {
@@ -691,7 +697,7 @@ form {
   }
 
   #headerContent #headText {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 24px;
     width: 304px;
     text-align: center;
@@ -711,7 +717,7 @@ form {
 
   #about h2 {
     max-width: 338px;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
   }
 
@@ -726,15 +732,16 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 10px;
-    margin-left: 30px;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-left: -16px;
   }
 
   /* account section   //////////////////////////////////////////////////// */
 
   #account {
     max-width: 400px;
-    height: 700px;
+    height: 900px;
     text-align: center;
     flex-direction: column;
   }
@@ -745,7 +752,7 @@ form {
 
   #account h2 {
     width: 346px;
-    font-size: 32px;
+    font-size: 20px;
   }
 
   #account-lead-p {
@@ -764,14 +771,9 @@ form {
     border: none;
   }
 
-  /* #account button #accountbtn {
-    padding-top: -40px;
-  } */
-
   #accountImage img {
     width: 370px;
     height: 226px;
-    margin-top: 60px;
     margin-left: 50px;
   }
 
@@ -831,26 +833,20 @@ form {
 
   /* section join  /////////////////////////////////////////////////////// */
   #join {
-    max-width: 400px;
-    text-align: center;
     flex-direction: column;
+    height: 800px;
   }
 
   #joinContent {
+    height: 600px;
+    width: 350px;
     margin: auto;
-    text-align: center;
-  }
-  #joinContent h2 {
-    width: 280px;
-    font-size: 30px;
-    margin-left: 0px;
+    margin-top: -100px;
   }
 
-  #joinContent #join-lead-p {
-    width: 259px;
-    font-size: 16px;
-    margin-left: 0px;
-  }
+  /* #joinContent #join-lead-p {
+    padding-top: -150px;
+  } */
 
   #joinImage img {
     width: 353px;
@@ -861,13 +857,16 @@ form {
   /* contact setion  /////////////////////////////////////////////////////// */
   #contact {
     max-width: 400px;
-    height: 900px;
+    height: 800px;
+    /* margin-top: -80px; */
+    margin-bottom: 50px;
   }
 
   #contact #contactContainer {
     display: flex;
     flex-direction: column;
-    /* padding-bottom: 200px; */
+    justify-content: center;
+    align-items: center;
   }
 
   #contact-lead {
@@ -931,14 +930,13 @@ form {
   /* footer sectionn ///////////////////////////////////////////////////// */
   #main-footer {
     max-width: 400px;
-    height: 800px;
+    height: 500px;
   }
 
   #footer-content {
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 50px;
   }
 
   #footer-content #left {
@@ -949,17 +947,18 @@ form {
     width: 326px;
     font-size: 16px;
     font-weight: 400px;
+    margin-bottom: 40px;
   }
 
-  #right {
+  /* #right {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0px;
     margin-top: 50px;
-  }
+  } */
 
-  #company-footer {
-    margin-top: 40px;
-    /* margin-left: 200px; */
+  #right #home-footer {
+    margin-left: 120px;
+    width: 300px;
   }
 }
