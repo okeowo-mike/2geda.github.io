@@ -1207,7 +1207,7 @@ form {
 
 #create-account-info #create-account-info-bottom #bottom {
   position: absolute;
-  bottom: 0;
+  bottom: 1;
   padding-top: 100px;
 }
 
