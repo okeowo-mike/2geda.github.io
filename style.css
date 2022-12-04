@@ -330,6 +330,7 @@ header {
   font-size: 18px;
   border-radius: 4px;
   background-color: #fd7e14;
+  color: var(--blueText-color);
   border: none;
   margin-top: 30px;
   margin-left: 90px;
@@ -793,6 +794,7 @@ form {
     font-size: 18px;
     border-radius: 4px;
     background-color: #fd7e14;
+    color: var(--blueText-color);
     border: none;
     margin-top: 30px;
     margin-left: 1px;
@@ -1076,34 +1078,40 @@ form {
 
   /* faq section  ///////////////////////////////////////////////////////////////// */
 
-  #container #create-account #faq ul li {
-    font-size: 20px;
-    margin-bottom: 30px;
+  /* #create-account-faq{
+flex: none;
+  } */
+
+  #create-account-image-faq img {
+    display: none;
   }
 
-  #container #create-account #faq {
-    padding-left: 100px;
-    margin: auto;
+  #container-faq #create-account-faq #faq #bottom #faq-line {
+    border: 1px solid #ccc;
+    width: 245px;
   }
 
-  #container #create-account #faq h1 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  #container #create-account #faq {
-    padding-left: 100px;
-    margin: auto;
+  #container-faq #create-account-faq #faq {
+    margin-top: 0px;
+    width: 350px;
+    margin-right: 110px;
   }
 
-  #container #create-account #faq #faq-line {
-    border: 1px solid #cccccc;
-    width: 680px;
-    margin-bottom: 20px;
-    margin-top: 200px;
+  #container-faq #create-account-faq #faq a {
+    text-decoration: none;
+    color: #000;
   }
 
-  #container #create-account #faq #faq-copy {
-    margin-top: 20px;
+  #container-faq #create-account-faq #faq ul li {
+    font-size: 16px;
+    /* margin-left: 30px; */
+    width: 330px;
+  }
+
+  #container-faq #create-account-faq #faq #bottom {
+    position: relative;
+    bottom: 0;
+    padding-top: 100px;
   }
 }
 
@@ -1134,7 +1142,7 @@ form {
   align-items: left;
   height: 700px;
   margin-top: 100px;
-  margin-left: -200px;
+  margin-right: 350px;
 }
 
 #create-account-info h1 {
@@ -1193,7 +1201,7 @@ form {
 #create-account-info-bottom #create-account-line {
   border: 1px solid #cccccc;
   width: 680px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #create-account-info-bottom #under-line-p {
@@ -1202,6 +1210,12 @@ form {
   letter-spacing: 1px;
   line-height: 20px;
   margin-bottom: 20px;
+}
+
+#create-account-info #create-account-info-bottom #bottom {
+  position: absolute;
+  bottom: 0;
+  padding-top: 100px;
 }
 
 /* forgot password section   ///////////////////////////////////////////////// */
@@ -1226,48 +1240,61 @@ form {
 #create-account-info-bottom #reset-line {
   border: 1px solid #cccccc;
   width: 680px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-top: 300px;
 }
 
 /* faq section  /////////////////////////////////////////////////////////////////// */
 
-#container #create-account #faq ul li {
-  font-size: 20px;
-  margin-bottom: 30px;
+#container-faq #create-account-faq {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-#container #create-account #faq {
-  padding-left: 60px;
+#create-account-image-faq img {
   height: 100vh;
+  width: 700px;
 }
 
-#container #create-account #faq a {
-  padding-top: 30px;
+#container-faq #create-account-faq #faq {
+  padding-left: 100px;
+  margin-top: 100px;
 }
 
-#container #create-account #faq h1 {
+#container-faq #create-account-faq #faq a {
+  text-decoration: none;
+  color: #000;
+}
+
+#container-faq #create-account-faq #faq h1 {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 30px;
 }
 
-#container #create-account #faq ul {
-  width: 330px;
+#container-faq #create-account-faq #faq ul {
   margin-left: -20px;
 }
-#container #create-account #faq ul li {
-  width: 330px;
+#container-faq #create-account-faq #faq li {
+  width: 500px;
   font-size: 18px;
+  margin-bottom: 30px;
 }
 
-#container #create-account #faq #faq-line {
+#container-faq #create-account-faq #faq #faq-line {
   border: 1px solid #cccccc;
   width: 680px;
   margin-bottom: 20px;
   margin-top: 200px;
 }
 
-#container #create-account #faq #faq-copy {
+#container-faq #create-account-faq #faq #faq-copy {
   margin-top: 20px;
+}
+
+#container-faq #create-account-faq #faq #bottom {
+  position: absolute;
+  bottom: 0;
+  padding-top: 100px;
 }
