@@ -982,7 +982,6 @@ form {
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
-    /* margin-bottom: 20px; */
     color: #000;
   }
 
@@ -1078,10 +1077,6 @@ form {
 
   /* faq section  ///////////////////////////////////////////////////////////////// */
 
-  /* #create-account-faq{
-flex: none;
-  } */
-
   #create-account-image-faq img {
     display: none;
   }
@@ -1103,16 +1098,14 @@ flex: none;
   }
 
   #container-faq #create-account-faq #faq ul li {
-    font-size: 16px;
-    /* margin-left: 30px; */
+    font-size: 18px;
     width: 330px;
   }
 
-  #container-faq #create-account-faq #faq #bottom {
-    position: relative;
-    bottom: 0;
-    padding-top: 100px;
-  }
+  /* #container-faq #create-account-faq #faq #bottom {
+    position: absolute;
+    bottom: 2;
+  } */
 }
 
 /* open account section //////////////////////////////////////////////////////////// */
@@ -1290,11 +1283,11 @@ flex: none;
 }
 
 #container-faq #create-account-faq #faq #faq-copy {
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #container-faq #create-account-faq #faq #bottom {
   position: absolute;
-  bottom: 0;
-  padding-top: 100px;
+  bottom: 1;
 }
