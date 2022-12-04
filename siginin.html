@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>2geda</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="create-account">
+        <div id="create-account-image">
+          <img src="./signin.png" alt="" />
+        </div>
+
+        <div id="create-account-info">
+          <a href="./index.html"> Back</a>
+
+          <h1>Welcome back</h1>
+          <h2>Let's log you back into your Account</h2>
+
+          <div id="form">
+            <form action="#">
+              <div class="form-group">
+                <!-- <label for="name">Name</label> -->
+                <input
+                  type="name"
+                  name="name"
+                  id="username"
+                  placeholder="Username"
+                />
+              </div>
+
+              <div class="form-group">
+                <!-- <label for="email">Email</label> -->
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="E-mail"
+                />
+              </div>
+
+              <div class="form-group">
+                <!-- <label for="phone">Phone Number</label> -->
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                />
+              </div>
+
+              <input id="sign-up" type="submit" value="Sign in" />
+            </form>
+
+            <div id="create-account-info-bottom">
+              <p id="forgot-password">
+                <a href="./resetpassword.html">Forgot my password</a>
+              </p>
+              <p id="under-signup">
+                Don’t have an account?
+                <span> <a href="./signup.html">Sign up</a> </span>
+              </p>
+
+              <div id="create-account-line"></div>
+              <p id="under-line-p">
+                2geda is a Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Curabitur sit amet mattis dui, eget efficitur diam. Duis
+                bibendum et libero et suscipit. Vestibulum suscipit lacus non
+                feugiat fringilla. Cras scelerisque hendrerit mi quis posuere.
+              </p>
+
+              <p>&copy; 2022 2geda, Inc. All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ///////////////////////////////////////////////////////////////// -->
+      <!-- java section -->
+      <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"
+      ></script>
+
+      <!-- linking java file -->
+      <script src="./main.js"></script>
+    </div>
+  </body>
+</html>

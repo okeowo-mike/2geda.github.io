@@ -287,9 +287,9 @@ header {
   flex-direction: row-reverse;
 }
 
-#account #accountbtn {
+/* #account #accountbtn {
   display: none;
-}
+} */
 
 #accountContent {
   display: flex;
@@ -321,6 +321,18 @@ header {
   width: 650.6px;
   margin-left: 100px;
   margin-top: 70px;
+}
+
+#account #accountbtn {
+  display: inline-block;
+  width: 310px;
+  height: 56px;
+  font-size: 18px;
+  border-radius: 4px;
+  background-color: #fd7e14;
+  border: none;
+  margin-top: 30px;
+  margin-left: 90px;
 }
 
 /* team section //////////////////////////////////////////////////////// */
@@ -674,7 +686,7 @@ form {
   #headerImage img {
     width: 400px;
     height: 285px;
-    margin-left: 80px;
+    margin-left: 90px;
     margin-top: -130px;
   }
 
@@ -682,7 +694,7 @@ form {
     text-align: center;
     margin: auto;
     position: absolute;
-    margin-left: 40px;
+    margin-left: 50px;
     margin-top: 20px;
   }
 
@@ -700,6 +712,15 @@ form {
     line-height: 24px;
     width: 304px;
     text-align: center;
+  }
+
+  #headerContent #trusted {
+    margin-left: -10px;
+  }
+
+  #headerbtn {
+    margin-top: 50px;
+    margin-left: -10px;
   }
 
   /* about section ////////////////////////////////////////////// */
@@ -745,8 +766,8 @@ form {
     flex-direction: column;
   }
   #accountContent {
-    margin-left: 18px;
     margin-top: 30px;
+    width: 350px;
   }
 
   #account h2 {
@@ -767,15 +788,14 @@ form {
   }
 
   #account #accountbtn {
-    display: inline-block;
-    width: 342px;
-    height: 44px;
+    width: 310px;
+    height: 56px;
     font-size: 18px;
     border-radius: 4px;
     background-color: #fd7e14;
     border: none;
     margin-top: 30px;
-    margin-left: 8px;
+    margin-left: 1px;
   }
 
   #accountImage img {
@@ -953,4 +973,297 @@ form {
     margin-left: 120px;
     width: 300px;
   }
+
+  /* open account section //////////////////////////////////////////////////////////// */
+
+  #create-account a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    /* margin-bottom: 20px; */
+    color: #000;
+  }
+
+  #create-account #create-account-image img {
+    display: none;
+  }
+
+  #create-account #create-account-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-top: -50px;
+    margin: auto;
+    margin-left: 30px;
+  }
+
+  #create-account-info h1 {
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    font-size: 32px;
+    padding-bottom: 10px;
+  }
+
+  #create-account-info h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #808080;
+    letter-spacing: 1px;
+    padding-bottom: 60px;
+  }
+
+  #create-account-info #form {
+    margin-left: -200px;
+  }
+
+  #create-account #create-account-info .form-group input {
+    width: 330px;
+    height: 50px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    border: 1px solid lightgray;
+  }
+
+  #create-account #sign-up {
+    width: 330px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: none;
+    padding: 6px 25px 6px 25px;
+    background-color: #fd7e14;
+    color: #0a2440;
+    margin-bottom: 20px;
+  }
+
+  #create-account-info-bottom {
+    text-align: center;
+  }
+
+  #create-account-info-bottom #under-signup {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  #create-account-info-bottom #under-signup span a {
+    color: #fd7e14;
+  }
+
+  #create-account #create-account-info-bottom #create-account-line {
+    border: 1px solid #cccccc;
+    width: 320px;
+    margin-bottom: 20px;
+  }
+
+  #create-account #create-account-info-bottom #reset-line {
+    width: 330px;
+  }
+
+  #create-account #create-account-info-bottom #under-line-p {
+    width: 350px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  /* faq section  ///////////////////////////////////////////////////////////////// */
+
+  #container #create-account #faq ul li {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  #container #create-account #faq {
+    padding-left: 100px;
+    margin: auto;
+  }
+
+  #container #create-account #faq h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #container #create-account #faq {
+    padding-left: 100px;
+    margin: auto;
+  }
+
+  #container #create-account #faq #faq-line {
+    border: 1px solid #cccccc;
+    width: 680px;
+    margin-bottom: 20px;
+    margin-top: 200px;
+  }
+
+  #container #create-account #faq #faq-copy {
+    margin-top: 20px;
+  }
+}
+
+/* open account section //////////////////////////////////////////////////////////// */
+#create-account {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+#create-account a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+#create-account #create-account-image img {
+  height: 100vh;
+  width: 600px;
+}
+
+#create-account-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 700px;
+  margin-top: 100px;
+  margin-left: -200px;
+}
+
+#create-account-info h1 {
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#create-account-info h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #808080;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+#create-account-info #form {
+  margin-left: -200px;
+}
+
+#create-account-info .form-group input {
+  width: 395px;
+  height: 56px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  border: 1px solid lightgray;
+}
+
+#sign-up {
+  width: 395px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 25px 6px 25px;
+  background-color: #fd7e14;
+  color: #0a2440;
+  margin-bottom: 20px;
+}
+
+#create-account-info-bottom {
+  margin-left: 200px;
+}
+
+#create-account-info-bottom #under-signup {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+#create-account-info-bottom #under-signup span a {
+  color: #fd7e14;
+}
+
+#create-account-info-bottom #create-account-line {
+  border: 1px solid #cccccc;
+  width: 680px;
+  margin-bottom: 20px;
+}
+
+#create-account-info-bottom #under-line-p {
+  width: 660px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+/* forgot password section   ///////////////////////////////////////////////// */
+
+#create-account-info-bottom #forgot-password {
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  color: #fd7e14;
+}
+
+#create-account-info-bottom #forgot-password a {
+  color: #fd7e14;
+}
+
+#reset-h2 {
+  width: 480px;
+  padding-bottom: 20px;
+}
+
+#create-account-info-bottom #reset-line {
+  border: 1px solid #cccccc;
+  width: 680px;
+  margin-bottom: 20px;
+  margin-top: 300px;
+}
+
+/* faq section  /////////////////////////////////////////////////////////////////// */
+
+#container #create-account #faq ul li {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+#container #create-account #faq {
+  padding-left: 60px;
+  height: 100vh;
+}
+
+#container #create-account #faq a {
+  padding-top: 30px;
+}
+
+#container #create-account #faq h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+#container #create-account #faq ul {
+  width: 330px;
+  margin-left: -20px;
+}
+#container #create-account #faq ul li {
+  width: 330px;
+  font-size: 18px;
+}
+
+#container #create-account #faq #faq-line {
+  border: 1px solid #cccccc;
+  width: 680px;
+  margin-bottom: 20px;
+  margin-top: 200px;
+}
+
+#container #create-account #faq #faq-copy {
+  margin-top: 20px;
 }
