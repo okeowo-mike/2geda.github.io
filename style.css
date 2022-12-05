@@ -68,6 +68,10 @@ body {
   background-color: var(--bg-color);
 }
 
+/* .main-nav  {
+  display: none !important;
+} */
+
 /* nav img{
   margin-left: 25px;
   margin-bottom: 10px;
@@ -662,12 +666,15 @@ form {
 
 @media (max-width: 500px) {
   #container {
-    /* max-width: 390px; */
     margin: auto;
     overflow: hidden;
   }
 
-  nav ul li {
+  #container #main-nav {
+    display: block;
+  }
+
+  /* nav ul li {
     margin-left: 9px;
     line-height: 29px;
   }
@@ -678,7 +685,7 @@ form {
     font-weight: 500;
     line-height: 29px;
     font-family: mulish;
-  }
+  } */
 
   header {
     /* max-width: 400px; */
@@ -998,7 +1005,7 @@ form {
     font-size: 18px;
     font-weight: 500;
     color: #000;
-    margin-top: -50px;
+    margin-top: 30px;
   }
 
   #create-account #create-account-image img {
@@ -1061,7 +1068,6 @@ form {
   #create-account-info-bottom #under-signup {
     font-size: 18px;
     letter-spacing: 1px;
-    margin-bottom: 20px;
   }
 
   #create-account-info-bottom #under-signup span a {
@@ -1087,11 +1093,18 @@ form {
     text-align: center;
   }
 
+  #create-account #create-account-info-bottom #bottom {
+    margin-top: -90px;
+  }
+
   #create-account-info #reset-h2 {
     width: 300px;
   }
 
   /* faq section  ///////////////////////////////////////////////////////////////// */
+  #container-faq #create-account-faq #faq {
+margin: auto;
+  }
 
   #create-account-image-faq img {
     display: none;
@@ -1103,7 +1116,6 @@ form {
   }
 
   #container-faq #create-account-faq #faq {
-    margin-top: 0px;
     width: 350px;
     margin-right: 110px;
   }
@@ -1201,6 +1213,7 @@ form {
   justify-content: space-between;
 }
 
+
 #create-account a {
   text-decoration: none;
   font-size: 18px;
@@ -1293,8 +1306,8 @@ form {
 
 #create-account-info #create-account-info-bottom #bottom {
   position: absolute;
-  bottom: 1;
-  padding-top: 100px;
+  bottom: 0;
+  /* padding-top: 100px; */
 }
 
 /* forgot password section   ///////////////////////////////////////////////// */
@@ -1458,6 +1471,8 @@ form {
 }
 
 /* stay-tuned page ////////////////////////////////////////////// */
+
+
 #stay-tuned {
   display: flex;
   flex-direction: row;
