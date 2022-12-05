@@ -1000,12 +1000,20 @@ form {
 
   /* open account section //////////////////////////////////////////////////////////// */
 
+  #container #create-account  {
+ height: 800px;
+  }
+
   #create-account a {
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
     color: #000;
-    margin-top: 30px;
+    margin-top: 40px;
+  }
+
+  #create-account #create-account-info #geda-logo{
+    margin-top: -80px;
   }
 
   #create-account #create-account-image img {
@@ -1026,7 +1034,7 @@ form {
     letter-spacing: 1.5px;
     font-weight: 700;
     font-size: 32px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
   }
 
   #create-account-info h2 {
@@ -1077,7 +1085,6 @@ form {
   #create-account #create-account-info-bottom #create-account-line {
     border: 1px solid #cccccc;
     width: 320px;
-    margin-bottom: 20px;
   }
 
   #create-account #create-account-info-bottom #reset-line {
@@ -1093,9 +1100,7 @@ form {
     text-align: center;
   }
 
-  #create-account #create-account-info-bottom #bottom {
-    margin-top: -90px;
-  }
+ 
 
   #create-account-info #reset-h2 {
     width: 300px;
