@@ -1103,7 +1103,7 @@ form {
 
   /* faq section  ///////////////////////////////////////////////////////////////// */
   #container-faq #create-account-faq #faq {
-margin: auto;
+    margin: auto;
   }
 
   #create-account-image-faq img {
@@ -1213,6 +1213,10 @@ margin: auto;
   justify-content: space-between;
 }
 
+#container #create-account-info #geda-logo img {
+  width: 100px;
+  margin-bottom: -70px;
+}
 
 #create-account a {
   text-decoration: none;
@@ -1471,7 +1475,6 @@ margin: auto;
 }
 
 /* stay-tuned page ////////////////////////////////////////////// */
-
 
 #stay-tuned {
   display: flex;
