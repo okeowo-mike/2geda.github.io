@@ -1000,8 +1000,8 @@ form {
 
   /* open account section //////////////////////////////////////////////////////////// */
 
-  #container #create-account  {
- height: 800px;
+  #container #create-account {
+    height: 800px;
   }
 
   #create-account a {
@@ -1012,7 +1012,7 @@ form {
     margin-top: 40px;
   }
 
-  #create-account #create-account-info #geda-logo{
+  #create-account #create-account-info #geda-logo {
     margin-top: -80px;
   }
 
@@ -1100,7 +1100,19 @@ form {
     text-align: center;
   }
 
- 
+  /* reset password */
+  #create-account-info #geda-logo-reset img {
+    margin-top: -40px;
+  }
+
+  #create-account-info #reset-back {
+    margin-top: 0px;
+    margin-top: -90px;
+  }
+
+  .reset-info {
+    margin-top: -40px;
+  }
 
   #create-account-info #reset-h2 {
     width: 300px;
@@ -1113,6 +1125,12 @@ form {
 
   #create-account-image-faq img {
     display: none;
+  }
+
+  #faq #faq-logo img {
+    margin-top: -90px;
+    margin-left: -20px;
+    margin-bottom: 50px !important;
   }
 
   #container-faq #create-account-faq #faq #bottom #faq-line {
@@ -1128,11 +1146,21 @@ form {
   #container-faq #create-account-faq #faq a {
     text-decoration: none;
     color: #000;
+    margin-left: -40px;
+    margin-bottom: 20px;
+  }
+
+  #container-faq #create-account-faq #faq h1 {
+    padding-bottom: 20px;
   }
 
   #container-faq #create-account-faq #faq ul li {
     font-size: 18px;
     width: 330px;
+  }
+
+  #container-faq #create-account-faq #faq ul {
+    margin-bottom: -150px;
   }
 
   /* job page section //////////////////////////////////////////////////////// */
@@ -1329,6 +1357,11 @@ form {
   color: #fd7e14;
 }
 
+#create-account-info #geda-logo-reset img {
+  width: 100px;
+  margin-bottom: 70px;
+}
+
 #create-account-info-bottom #forgot-password a {
   color: #fd7e14;
 }
@@ -1361,6 +1394,11 @@ form {
 #container-faq #create-account-faq #faq {
   padding-left: 100px;
   margin-top: 100px;
+}
+
+#faq #faq-logo img {
+  width: 100px;
+  margin-bottom: 100px;
 }
 
 #container-faq #create-account-faq #faq a {
@@ -1407,6 +1445,12 @@ form {
   flex-direction: row;
   justify-content: center;
   width: 1440px;
+}
+
+#container #job-logo img {
+  width: 100px;
+  margin-left: -180px;
+  margin-top: 10px;
 }
 
 #container #job #job-image img {
