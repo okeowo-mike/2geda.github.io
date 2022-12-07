@@ -1,0 +1,34 @@
+#create-account-info {
+    margin-left: 50px;
+}
+
+#create-account-info #up{
+    margin-top: -250px;
+}
+
+#create-account-info #down{
+    margin-top: 300px;
+}
+
+#create-account-info #back-btn{
+   margin-top: 50px;
+   
+}
+
+#create-account-info #survey-submit  {
+    width: 395px;
+    line-height: 50px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+    #create-account-info #survey-submit  {
+        width: 330px;
+       
+    }
+}

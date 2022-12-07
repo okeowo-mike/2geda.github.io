@@ -71,12 +71,16 @@ body {
   border-radius: 50px 0px 0px 0px;
 }
 
-#main-panel #top-info #name {
+#main-panel #top-info #name p{
   margin-top: 20px;
   margin-left: 40px;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
+}
+
+#main-panel #top-info #lo img {
+  display: none;
 }
 
 #main-panel #top-info #userid {
@@ -159,6 +163,12 @@ body {
   font-size: 28px;
   text-align: center;
 }
+
+#main-panel #mother #right #top-right #cards .card svg {
+ margin-bottom: 10px;
+ font-size: 30px;
+}
+
 #main-panel #mother #right #top-right #cards #card-1 {
   background-color: #1685ee;
   margin-right: 30px;
@@ -243,6 +253,12 @@ body {
   margin-top: 22px;
 }
 
+#main-panel #mother #left #refer-link svg  {
+ color: #1685ee;
+ font-size: 18px;
+ margin-top: 5px;
+}
+
 #main-panel #mother #left #referral .referral {
   border: 0.7px solid grey;
   width: 260px;
@@ -259,4 +275,117 @@ body {
   padding-top: 15px;
   border-radius: 5px;
   margin-top: 22px;
+}
+
+@media (max-width: 500px) {
+  body {
+    max-width: 500px;
+    height: 700px;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #container #side-panel {
+    display: none;
+  }
+
+  /*  */
+  #main-panel #mother #right #top-right #cards .card {
+    width: 150px;
+    height: 130px;
+  }
+
+  #main-panel #mother #right #top-right #cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 70px;
+    margin: 5px auto;
+    margin-left: -5px;
+  }
+
+  #main-panel #mother #right #top-right #cards #card-3 {
+    margin-top: 20px;
+  }
+  #main-panel #mother #right #top-right #cards #card-4 {
+    margin-top: 20px;
+  }
+
+  /*  */
+  #main-panel #mother #right #low-right {
+    display: none;
+  }
+
+  /*  */
+  #main-panel #mother {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main-panel #mother #left {
+    padding-top: 65px;
+    /* margin-left: 35px; */
+    margin: auto;
+    padding-right: 0px;
+  }
+
+  /*  */
+  #main-panel {
+    border-radius: 0px 0px 0px 0px;
+  }
+
+  #main-panel #top-info {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    border-radius: 0px 0px 0px 0px;
+  }
+
+  #main-panel #top-info #name p{
+    display: none;
+  }
+
+  #main-panel #top-info #userid {
+    display: flex;
+    margin-top: 4px;
+    margin-right: 30px;
+  }
+
+  #main-panel #top-info #name #lo img {
+    display: inline-block;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  #main-panel #top-info #userid #user-img img {
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    border-radius: 50%;
+  }
+
+  #main-panel #top-info #userid #userid-num {
+    padding-top: 9px;
+    padding-left: 5px;
+  }
+
+  #main-panel #top-info #userid #userid-num #id {
+    color: #0e6bc3;
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 8px;
+    letter-spacing: 1px;
+  }
+
+  #main-panel #top-info #userid #userid-num #id-num {
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    letter-spacing: 1px;
+  }
 }

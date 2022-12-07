@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./survey.css" />
     <title>2geda</title>
   </head>
   <body>
@@ -21,12 +22,10 @@
             ><img src="./2geda Logo Design-09.png" alt="Logo"
           /></a>
           <br />
-          <br />
-          <br />
-          <a href="./index.html"> Back</a>
+          <a id="back-btn" href="./index.html"> Back</a>
 
-          <h1>Welcome Back</h1>
-          <h2>Let's log you back into your Account</h2>
+          <h1>Onboard Survey</h1>
+          <h2>Please complete the survey below</h2>
 
           <div id="form">
             <form action="#">
@@ -35,67 +34,67 @@
                 <input
                   type="name"
                   name="name"
-                  id="username"
-                  placeholder="Username"
+                  id="name"
+                  placeholder="Full name"
+                />
+              </div>
+              <div class="form-group">
+                <!-- <label for="name">Name</label> -->
+                <input
+                  type="number"
+                  name="number"
+                  id="age"
+                  placeholder="Age (DD-MM-YYYY)"
+                />
+              </div>
+
+              <div class="form-group">
+                <!-- <label for="name">Name</label> -->
+                <input
+                  type="text"
+                  name="text"
+                  id="sex"
+                  placeholder="Sex"
                 />
               </div>
 
               <div class="form-group">
                 <!-- <label for="email">Email</label> -->
                 <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="E-mail"
+                  type="text"
+                  name="text"
+                  id="religion"
+                  placeholder="Religion"
+                />
+              </div>
+              <div class="form-group">
+                <!-- <label for="phone">Phone Number</label> -->
+                <input
+                  type="text"
+                  name="state"
+                  id="state"
+                  placeholder="State of origin"
                 />
               </div>
 
               <div class="form-group">
                 <!-- <label for="phone">Phone Number</label> -->
                 <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  placeholder="Password"
+                  type="text"
+                  name="text"
+                  id="ethnicity"
+                  placeholder="Ethnicity"
                 />
               </div>
-              <input id="sign-up" type="submit" value="Sign in" />
-             
-            <p>TESTING <a href="./thank-you.html">---Dashboard---</a></p>
-            
+
             </form>
+            
+            
+          </div>
+          <a id="survey-submit" href="./thank-you.html">Submit</a>
 
-            <div id="create-account-info-bottom">
-              <p id="forgot-password">
-                <a href="./resetpassword.html">Forgot my password</a>
-              </p>
-              <p id="under-signup">
-                Don't have an account?
-                <span><a href="./signup.html">Sign up</a></span>
-              </p>
-
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-
-              <div id="bottom">
-                <div id="create-account-line"></div>
-                <!-- <p id="under-line-p">
-                 2geda is a Lorem ipsum dolor sit amet, consectetur adipiscing
-                 elit. Curabitur sit amet mattis dui, eget efficitur diam. Duis
-                 bibendum et libero et suscipit. Vestibulum suscipit lacus non
-                 feugiat fringilla. Cras scelerisque hendrerit mi quis posuere.
-               </p> -->
-
-                <p>&copy; 2022 2geda, Inc. All rights reserved</p>
-              </div>
-            </div>
+          <!-- <p id="copyright-p">&copy; 2022 2geda, Inc. All rights reserved</p> -->
+            
           </div>
         </div>
       </div>
