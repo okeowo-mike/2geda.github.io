@@ -490,11 +490,31 @@ header {
   line-height: 27px;
   letter-spacing: 0.5px;
   margin-top: 22px;
+  text-align: center;
 }
 
 #socialsIcons {
   margin-top: 25px;
-  padding-right: 30px;
+  padding-right: 0px;
+}
+
+#reachout-btn {
+  margin-top: 50px;
+  background-color: var(--orange-color);
+  width: 310px;
+  height: 56px;
+  border-radius: 4px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--blueText-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 #contactContainer #socialsIcons svg {
@@ -515,6 +535,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 #contactContainer {
@@ -560,6 +581,7 @@ header {
 
 form {
   margin-left: 200px;
+  display: none;
 }
 
 #main-footer {
@@ -904,11 +926,10 @@ form {
   }
 
   /* contact setion  /////////////////////////////////////////////////////// */
-  #contact #contactContainer {
+  #contact {
     display: flex;
     flex-direction: column;
-    /* height: 100vh; */
-    /* margin-top: -150px; */
+    height: 550px !important;
   }
 
   #contact-lead {
@@ -916,8 +937,8 @@ form {
   }
 
   #contact #contactContainer #contactText {
-    height: 240px;
-    padding-top: 30px;
+    height: 500px;
+    /* padding-top: 30px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -930,13 +951,10 @@ form {
   }
 
   #form {
-    margin: auto;
-    margin-top: -50px;
-    margin-left: -173px;
-    /* padding-bottom: 30px; */
+    display: none;
   }
 
-  .form-group input {
+  /* .form-group input {
     width: 335px;
     height: 56px;
     border-radius: 4px;
@@ -958,7 +976,7 @@ form {
     border-radius: 4px;
     margin-bottom: 12px;
     border: 1px solid lightgray;
-  }
+  } */
 
   /* footer sectionn ///////////////////////////////////////////////////// */
   #main-footer {
